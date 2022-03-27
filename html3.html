@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+body {
+  font-family:times-new-roman;
+  background-image: url('https://1.bp.blogspot.com/-zEEcaf2B0jE/Xkjjn8r0f1I/AAAAAAAAJIc/tG3AmOkwGKQuox6Clq5CauJIMoGc95tIwCLcBGAsYHQ/s1600/Wallpaper%2Bazul%2Be%2Bbranco.jpg');
+
+border:8px solid white;
+padding:20px 10px 10px 20px;
+}
+.grad{
+ background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+  margin:50px;
+height: 900px;
+border: 5px solid black;
+}
+header {
+  display: flex;
+  padding: 50px 15px 15px;
+}
+header select {
+  width: 100%;
+  max-width: 280px;
+  padding: 20px 25px;
+background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px 0px 20px 0px;
+  border-bottom: 3px solid #ffffff;
+  font-size: 30px;
+  transition: 1.2s ease-out;
+}
+
+header select:focus {
+  background-color: #ffff66;
+}
+
+main {
+  flex: 1 1 100%;
+  padding: 25px 25px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#btn{
+height:80px;
+  width: 80%;
+  align-items: center;
+  max-width: 190px;
+  padding: 7px 10px;
+margin: 20px;
+background-color:#ffff66;
+  border-radius: 20px 0px 20px 0px;
+  border-bottom: 3px solid #ffffff;
+  font-size: 25px;
+
+}
+h1{
+position:relative;
+font-size: 80px;
+ text-shadow: 0px 4px rgba(0,0,0, 0.8);
+text-align:center;
+color:#000000;
+}
+</style>
+
+	
+<script language ="javascript" type = "text/javascript" >
+
+window.onload = () => {
+	let button = document.querySelector("#btn");
+
+	// Function for calculating BMI
+	button.addEventListener("click", change);
+};
+
+function change() {
+  if (document.getElementById('age').value == '1' && document.getElementById('gender').value == 'female' )
+    document.getElementById("image").src = 'https://s3-eu-west-1.amazonaws.com/toddlebox-dev/wp-content/uploads/2016/08/03141953/Food_Pyramid.jpg';
+  else if (document.getElementById('age').value == '1' && document.getElementById('gender').value == 'male')
+    document.getElementById("image").src = 'https://i.pinimg.com/originals/66/36/7a/66367a9d2e616c8289189c1b388630b4.jpg';
+
+
+  else if (document.getElementById('age').value == '2' && document.getElementById('gender').value == 'female')
+    document.getElementById("image").src = 'https://www.plus100years.com/editors/ckeditor/plugins/imageuploader/uploads/4546e557c.jpg';
+  else if (document.getElementById('age').value == '2' && document.getElementById('gender').value == 'male')
+    document.getElementById("image").src = 'https://s-media-cache-ak0.pinimg.com/600x315/a2/6d/e5/a26de55d4617acd24c03854350d5068f.jpg';
+ 
+  else if (document.getElementById('age').value == '3' && document.getElementById('gender').value == 'female')
+    document.getElementById("image").src = 'https://i2.wp.com/stylenrich.com/wp-content/uploads/2015/10/fb-diet-chart-for-women-stylenrich.jpg?fit=1200%2C630&ssl=1';
+else if (document.getElementById('age').value == '3' && document.getElementById('gender').value == 'male')
+document.getElementById("image").src = 'https://th.bing.com/th/id/OIP.mjA3cVrs0uORQBRdJmP1yAHaFe?pid=ImgDet&rs=1';
+
+}
+</script> 
+
+</head>
+<img src="https://th.bing.com/th/id/OIP.8omWjn6n_IjuHwhR88LQwQHaEr?pid=ImgDet&rs=1" height="190" width="270" style="float:left;border-color:black;border-width:4px;border-style:solid;border-radius:10%">
+<img src="https://th.bing.com/th/id/R.af6bd4d60712f0f0118a612b84ce234b?rik=AvY6eS%2b%2fGLxo1A&riu=http%3a%2f%2fwww.40fit.com%2fwp-content%2fuploads%2f2016%2f05%2fBMI.jpg&ehk=Q3pvTQdAyAeap%2fSabmN2PjdNp1lnyEGGTzE3v7hyRLM%3d&risl=&pid=ImgRaw&r=0" height="190" width="270" style="float:right;border-color:black;border-width:4px;border-style:solid;border-radius:10%">
+<body>
+<h1>NUTRITION APP</h1>
+
+<div class="grad">	
+<br><br>
+<header>
+ <p style="font-size: 160%;font-family:Times New Roman;color:#000000;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;AGE&emsp;&emsp;</p>
+<label for="AGE"></label>
+<select name="AGE" id="age">
+  <option value="1" id="age" >childhood</option>
+  <option value="2" id="age" >teenage</option>
+  <option value="3" id="age" >adulthood</option>
+</select> 
+
+ <p style="font-size: 160%;font-family:Times New Roman;color:#000000;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GENDER&emsp;&emsp;</p>
+
+<label for="GENDER"></label>
+<select name="AGE" id="gender">
+  <option value="female" id="gender"  >Female</option>
+  <option value="male" id="gender" >Male</option>
+</select><br>
+</header>
+<header>
+<br>
+&emsp;&emsp;
+&emsp;&emsp;
+&emsp;&emsp;
+&emsp;&emsp;
+&emsp;&emsp;
+&emsp;&emsp;
+&emsp;&emsp;
+&emsp;&emsp;
+&emsp;&emsp;
+&emsp;&emsp;
+<header>
+<input type="button" name="submit" id="btn" value="Submit" onclick="change()" />
+</header>
+
+<br>
+<img width ="500px" height="500px" id="image"  style="border-color:black;border-width:4px;border-style:solid;border-radius:10%"/><br>
+</header>
+</body>
+
+</html>
